@@ -25,21 +25,25 @@ header img {
   border: 3px solid #666;
 }
 
+section {
+  padding: 50px 0;
+}
+
 .navbar-fixed-top.scrolled {
   background-color: #495057 !important;
   -webkit-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
 }
 
-.about {
-  padding: 50px 0;
-}
-
-.about h2 {
+h2 {
   font-weight: 600;
 }
 
-.about p {
+p {
   font-family: "Source Sans Pro";
+}
+
+.skills {
+  background-color: #e5e5e5;
 }
 /*# sourceMappingURL=style.css.map */
