@@ -1,6 +1,6 @@
 body {
-  margin: 0;
   font-family: Montserrat;
+  margin: 0;
 }
 
 header {
@@ -27,6 +27,20 @@ header img {
 
 section {
   padding: 50px 0;
+}
+
+.portfolio .col-portfolio {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.portfolio .card-portfolio {
+  min-height: 300px;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .navbar-fixed-top.scrolled {
