@@ -29,11 +29,6 @@ section {
   padding: 50px 0;
 }
 
-.about p {
-  font-size: 20px;
-  font-family: "Source Sans Pro";
-}
-
 .portfolio .col-portfolio {
   margin-right: -10px;
   margin-left: -10px;
@@ -59,7 +54,91 @@ h2 {
   margin-bottom: -3px;
 }
 
-p {
+.subtitle {
+  font-size: 20px;
   font-family: "Source Sans Pro";
+}
+
+.contact-item {
+  background: #fff;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: none;
+  border: 2px solid #fff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-item i {
+  color: #fbd214;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-item:hover {
+  background: #fbd214;
+  color: #fff;
+}
+
+.contact-item:hover i,
+.contact-item:hover .contact-item-title,
+.contact-item:hover p {
+  color: #fff;
+}
+
+.contact-item:hover::before {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+.contact h4 {
+  font-size: medium;
+}
+
+.contact p {
+  font-size: small;
+}
+
+.social-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #aaa;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #fbd214;
+  color: #fff;
+  text-decoration: none;
+  border-color: #fbd214;
 }
 /*# sourceMappingURL=style.css.map */
