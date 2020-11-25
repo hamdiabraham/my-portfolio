@@ -35,12 +35,31 @@ section {
 }
 
 .portfolio .card-portfolio {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  z-index: 1;
   min-height: 300px;
   padding: 30px;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
-  margin-bottom: 10px;
+  border: 0;
+}
+
+.portfolio .bg-one {
+  background-image: url("/assets/portfolio-1.jpg");
+}
+
+.portfolio .bg-two {
+  background-image: url("/assets/portfolio-2.jpg");
+}
+
+.portfolio .bg-three {
+  background-image: url("/assets/portfolio-3.jpg");
+}
+
+.portfolio .bg-four {
+  background-image: url("/assets/portfolio-4.jpg");
 }
 
 .navbar-fixed-top.scrolled {
