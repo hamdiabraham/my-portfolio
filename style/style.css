@@ -109,8 +109,8 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 0.25s -webkit-transform ease-in-out;
   transition: 0.25s -webkit-transform ease-in-out;
   transition: 0.25s transform ease-in-out;
