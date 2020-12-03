@@ -29,37 +29,115 @@ section {
   padding: 50px 0;
 }
 
-.portfolio .col-portfolio {
+.figure-img {
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 0;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.figure-img .img-fluid {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s transform ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.25s -webkit-transform ease-in-out;
+}
+
+.figure-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.travel-button {
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+}
+
+.col-portfolio {
   margin-right: -10px;
   margin-left: -10px;
 }
 
-.portfolio .card-portfolio {
-  border-radius: 15px;
-  margin-bottom: 10px;
-  z-index: 1;
-  min-height: 300px;
-  padding: 30px;
-  background-size: cover;
-  background-position: center;
+.card {
+  height: 300px;
   border-radius: 15px;
   border: 0;
 }
 
-.portfolio .bg-one {
-  background-image: url("/assets/portfolio-1.jpg");
+.card.bordered {
+  border: 1px solid #e9ecef;
 }
 
-.portfolio .bg-two {
-  background-image: url("/assets/portfolio-2.jpg");
+.card .img-wrapper {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 0.9375rem;
 }
 
-.portfolio .bg-three {
-  background-image: url("/assets/portfolio-3.jpg");
+.card .img-wrapper img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.portfolio .bg-four {
-  background-image: url("/assets/portfolio-4.jpg");
+.card.card-portfolio {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card.card-portfolio:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.card.card-portfolio .img-wrapper {
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s transform ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.25s -webkit-transform ease-in-out;
+}
+
+.card.card-portfolio .meta-wrapper {
+  z-index: 3;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card.card-portfolio:hover .img-wrapper {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .navbar-fixed-top.scrolled {
