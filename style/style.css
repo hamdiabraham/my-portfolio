@@ -141,8 +141,8 @@ section {
 
 .navbar-fixed-top.scrolled {
   background-color: #495057 !important;
-  -webkit-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
+  -webkit-transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
 }
 
 h2 {
